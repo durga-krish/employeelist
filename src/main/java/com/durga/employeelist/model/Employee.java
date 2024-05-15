@@ -33,12 +33,6 @@ public class Employee {
     @JoinColumn(name = "locations_id")
     private Location location;
 
-    @Column(name = "office_id")
-    private int officeId;
-
-    @Column(name = "department_id")
-    private int departmentId;
-
 
     public int getId() {
         return id;
@@ -112,23 +106,8 @@ public class Employee {
         isActive = active;
     }
 
-    public int getOfficeId() {
-        return officeId;
-    }
-
-    public void setOfficeId(int officeId) {
-        this.officeId = officeId;
-    }
-
-    public int getDepartmentId() {
-        return departmentId;
-    }
-
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
-    }
-
     public Department getDepartment() {
+
         return department;
     }
 
